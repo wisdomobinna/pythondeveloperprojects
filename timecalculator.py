@@ -23,6 +23,9 @@ new_mins = mins + mins_bal
 end_hour = new_hours + (int(new_mins/60)) 
 end_mins = new_mins % 60
 
-print(f'Endtime is: {end_hour}:{end_mins}')
+if end_hour < 12:
+    print(f'Endtime is: {end_hour}:{end_mins}am')
+else:
+    print(f'Endtime is: {end_hour}:{end_mins}pm')
 
 
